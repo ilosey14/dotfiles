@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Tab</title>
+	<link rel="stylesheet" href="style/style.css">
+	<script src="src/sites.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="search-background"></div>
+		<div class="search-container">
+			<form action="https://bing.com/search?scope=web" method="get" target="_self" autocomplete="off">
+				<input type="search" name="q" class="search-input" placeholder="Search..." autofocus required>
+				<button type="submit" class="search-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40" width="40">
+						<path fill="#666" d="M 14 30.94 v -28.14 l -8 -2.8 v 35.54 l 8 4.46 l 20 -11.5 v -9.1 Z"></path>
+						<path opacity="0.75" fill="#666" d="M 25.28 24.43 l 8.72 -5.03 l -17.74 -6.2 l 3.47 8.65 l 5.55 2.58 Z"></path>
+					</svg>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<ul id="sites-list" class="content-container"></ul>
+	</div>
+	<script src="src/main.js"></script>
+</body>
+</html>
